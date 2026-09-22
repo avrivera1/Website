@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Anderson Rivera</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <h1>Anderson Rivera</h1>
+    <p>My Online Resume</p>
+  </header>
+
+  <div class="content">
+    <nav>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="employment.html">Employment</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Projects</h2>
+      <p>
+        Selected projects, built to explore backend development, public APIs,
+        and embedded hardware.
+      </p>
+      <ul>
+        <li>Deployed and maintain a headless Debian Linux server, accessible over SSH, hosting personal projects and backend services</li>
+        <li>Building a Go backend that integrates the MBTA API to deliver real-time transit predictions from GPS coordinates</li>
+        <li>Developing a client-server system that pushes nearby bus-arrival data to an ESP32-based wearable display</li>
+      </ul>
+
+      <div class="calculator">
+        <h3>Calculator</h3>
+
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label for="first-number">First Number:</label>
+            <input type="text" id="first-number">
+          </div>
+          <div class="calc-field">
+            <label for="second-number">Second Number:</label>
+            <input type="text" id="second-number">
+          </div>
+        </div>
+
+        <div class="calc-buttons">
+          <button onclick="addition()">+</button>
+          <button onclick="subtraction()">-</button>
+          <button onclick="multiplication()">*</button>
+          <button onclick="division()">/</button>
+          <button onclick="power()">**</button>
+          <button onclick="clearCalc()">Clear</button>
+        </div>
+
+        <div class="calc-result">
+          <h3 id="output"></h3>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>All Rights Reserved by Anderson Rivera <a href="credits.html">Credits</a> &copy;</p>
+  </footer>
+
+</div>
+</body>
+</html>
